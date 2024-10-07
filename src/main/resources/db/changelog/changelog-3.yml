@@ -1,0 +1,18 @@
+databaseChangeLog:
+  - changeSet:
+          id: 3
+          author: chiso
+          changes:
+            - addColumn:
+                tableName: products
+                columns:
+                  - column:
+                      name: price
+                      type: decimal(10,2)
+                      constraints:
+                        nullable: true
+                  - column:
+                      name: stock_quantity
+                      type: int
+                      constraints:
+                        nullable: true

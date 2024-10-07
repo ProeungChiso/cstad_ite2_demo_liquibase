@@ -1,0 +1,23 @@
+databaseChangeLog:
+  - changeSet:
+      id: 2
+      author: chiso
+      changes:
+        - insert:
+            tableName: products
+            columns:
+              - column:
+                  name: name
+                  value: "Cheddar"
+              - column:
+                  name: description
+                  value: "Aged cheddar cheese"
+        - insert:
+            tableName: products
+            columns:
+              - column:
+                  name: name
+                  value: "Gouda"
+              - column:
+                  name: description
+                  value: "Smoked gouda cheese"

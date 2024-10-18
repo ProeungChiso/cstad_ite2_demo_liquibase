@@ -2,6 +2,7 @@ databaseChangeLog:
   - changeSet:
       id: 1
       author: chiso
+      context: prod
       changes:
         - createTable:
             tableName: products
